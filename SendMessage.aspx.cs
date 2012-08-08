@@ -28,7 +28,7 @@ namespace TropoSample
             // An ArrayList to hold the numbers to call (first call answered hears the prompt).
             List<String> to = new List<String>();
             to.Add("4027087711");
-            to.Add("4027161165");
+            //to.Add("4027161165");
 
             // Create an endpoint object to denote who the call is from.
             string from = "4029396500";
