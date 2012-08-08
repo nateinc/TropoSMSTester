@@ -47,9 +47,9 @@ namespace TropoSamples
 
                 catch (JsonReaderException ex)
                 {
-                    EventLog log = new EventLog();
-                    log.Source = "TROPOWEBAPI";
-                    log.WriteEntry("Tropo WebAPI Exception " + ex.Message, EventLogEntryType.Error);
+                    //EventLog log = new EventLog();
+                    //log.Source = "TROPOWEBAPI";
+                    //log.WriteEntry("Tropo WebAPI Exception " + ex.Message, EventLogEntryType.Error);
                     Response.StatusCode = 500;
                     tropo.Say("An error occured in the application. Bad JSON");
 
@@ -57,9 +57,9 @@ namespace TropoSamples
 
                 catch (Exception ex)
                 {
-                    EventLog log = new EventLog();
-                    log.Source = "TROPOWEBAPI";
-                    log.WriteEntry("Tropo WebAPI Exception " + ex.Message, EventLogEntryType.Error);
+                    //EventLog log = new EventLog();
+                    //log.Source = "TROPOWEBAPI";
+                    //log.WriteEntry("Tropo WebAPI Exception " + ex.Message, EventLogEntryType.Error);
                     Response.StatusCode = 500;
                     tropo.Say("An error occured in the application.");
                 }
