@@ -54,7 +54,7 @@ namespace TropoSamples
 
                 catch (Exception ex)
                 {
-                    Response.StatusCode = 501;
+                    Response.StatusCode = 502;
                     tropo.Say("An error occured in the application.");
                 }
 
