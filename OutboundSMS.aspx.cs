@@ -47,14 +47,14 @@ namespace TropoSamples
 
                 catch (JsonReaderException ex)
                 {
-                    Response.StatusCode = 501;
+                    Response.StatusCode = 500;
                     tropo.Say("An error occured in the application. Bad JSON");
 
                 }
 
                 catch (Exception ex)
                 {
-                    Response.StatusCode = 502;
+                    Response.StatusCode = 500;
                     tropo.Say("An error occured in the application.");
                 }
 
